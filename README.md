@@ -16,5 +16,5 @@ $ python3 hidewave.py -f demo.wav -m "Secret Msg" -o output.wav
 
 # extract messages from wav
 ```
-$ python3 exwave.py -f output.wav
+$ python3 extractwav.py -f output.wav
 ```
