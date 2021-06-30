@@ -1,4 +1,4 @@
-# A simple code to extract messages hidded using hidewav.py
+#!/usr/bin/env python3
 
 # imports
 import os
@@ -9,25 +9,23 @@ parser.add_argument('-f', help='audiofile', dest='audiofile')
 args = parser.parse_args()
 af = args.audiofile
 arged = False
-
 if af:
     arged = True
-
-def clear():
-    os.system('clear')
-
+def cls():
+  os.system("clear")
 def help():
   print("\033[92mExtract Your Secret Message from Audio Wave File.\033[0m")
-  print ('''usage: extractwav.py [-h] [-f AUDIOFILE]
+  print ('''usage: ExWave.py [-h] [-f AUDIOFILE]
+
 optional arguments:
   -h, --help    show this help message and exit
   -f AUDIOFILE  Select Audio File''')
-
-
+  
 def banner():
-    print("HIDE-MSG")
+  print('HIDE WAVE')
 
-def extract_msg(af):
+
+def ex_msg(af):
     if not arged:
       help()
     else:
@@ -39,11 +37,10 @@ def extract_msg(af):
         msg = string.split("###")[0]
         print("Your Secret Message is: \033[1;91m"+msg+"\033[0m")
         waveaudio.close()
-
-clear()
+cls()
 banner()
 try:
-    extract_msg(af)
+  ex_msg(af)
 except:
-    print("Something went wrong!!!. Please try again")
-    quit('')
+  print ("Something went wrong!! try again")
+  quit('')
