@@ -21,10 +21,6 @@ optional arguments:
   -h, --help    show this help message and exit
   -f AUDIOFILE  Select Audio File''')
   
-def banner():
-  print('HIDE WAVE')
-
-
 def ex_msg(af):
     if not arged:
       help()
@@ -38,7 +34,7 @@ def ex_msg(af):
         print("Your Secret Message is: \033[1;91m"+msg+"\033[0m")
         waveaudio.close()
 cls()
-banner()
+
 try:
   ex_msg(af)
 except:

@@ -27,8 +27,6 @@ optional arguments:
   -m SECRETMSG  Enter your message
   -o OUTPUTFILE Your output file path and name''')
   
-def banner():
-    print('HIDE WAV')
 
 def em_audio(af, string, output):
     if not arged:
@@ -48,7 +46,6 @@ def em_audio(af, string, output):
       waveaudio.close()
       print ("Done...")
 cls()
-banner()
 try:
   em_audio(af, string, output)
 except:
