@@ -3,6 +3,8 @@ A simple python tool to hide messages in wav files like mr.robot
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 
+<img src=""></img>
+
 # Installation
 ```
 $ git clone https://github.com/krishpranav/hidewave
