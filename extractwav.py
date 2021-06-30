@@ -27,7 +27,7 @@ optional arguments:
 def banner():
     print("HIDE-MSG")
 
-def ex_msg(af):
+def extract_msg(af):
     if not arged:
       help()
     else:
