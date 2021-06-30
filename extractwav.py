@@ -13,3 +13,6 @@ arged = False
 if af:
     arged = True
 
+def clear():
+    os.system('clear')
+ 
