@@ -15,4 +15,10 @@ if af:
 
 def clear():
     os.system('clear')
- 
+
+def help():
+  print("\033[92mExtract Your Secret Message from Audio Wave File.\033[0m")
+  print ('''usage: extractwav.py [-h] [-f AUDIOFILE]
+optional arguments:
+  -h, --help    show this help message and exit
+  -f AUDIOFILE  Select Audio File''')
