@@ -15,7 +15,7 @@ output = args.outputfile
 arged = False
 if af and string and output:
     arged = True
-def clear():
+def cls():
   os.system("clear")
 def help():
   print("\033[92mHide Your Secret Message in Audio Wave File.\033[0m")
@@ -28,7 +28,7 @@ optional arguments:
   -o OUTPUTFILE Your output file path and name''')
   
 def banner():
-    print('HIDE-WAV')
+    print('HIDE WAV')
 
 def em_audio(af, string, output):
     if not arged:
@@ -47,7 +47,7 @@ def em_audio(af, string, output):
         fd.writeframes(frame_modified)
       waveaudio.close()
       print ("Done...")
-clear()
+cls()
 banner()
 try:
   em_audio(af, string, output)
