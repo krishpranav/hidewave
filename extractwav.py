@@ -39,3 +39,11 @@ def extract_msg(af):
         msg = string.split("###")[0]
         print("Your Secret Message is: \033[1;91m"+msg+"\033[0m")
         waveaudio.close()
+
+clear()
+banner()
+try:
+    extract_msg(af)
+except:
+    print("Something went wrong!!!. Please try again")
+    quit('')
